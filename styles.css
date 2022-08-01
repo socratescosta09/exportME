@@ -479,6 +479,11 @@ header {
   cursor: pointer;
 }
 
+.btn:hover {
+  color: #107fc3;
+  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.1);
+}
+
 .card-info button {
   width: 8rem;
   height: 2.5rem;
@@ -514,6 +519,7 @@ header {
     linear-gradient(rgba(10,10,10, 0.2),rgba(22, 22, 22, 0.9)),
     url(./resource/img/bg-form.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contato-right {
@@ -602,7 +608,13 @@ header {
 .sessao-orcamento {
   width: 100%;
   height: 100vh;
-  background-image: url("./resource/img/bg-orcamento_1.png");
+  background:
+  linear-gradient(rgba(10,10,10, 0.3),rgba(22, 22, 22, 0.9)),
+  url("./resource/img/bg-orcamento_1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   object-fit: cover;
   display: flex;
   justify-content: center;
@@ -612,7 +624,7 @@ header {
 .orcamento-wrapper {
   width: 60%;
   height: 80%;
-  background-color: #ffffff99;
+  background-color: #ffffff91;
   border-radius: 10px;
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
   position: relative;
@@ -723,6 +735,7 @@ footer i {
   color: #edeaea;
   font-size: 2rem;
 
+  padding: .1rem;
   border: solid 1px #cacaca;
   border-radius: 5px;
   transition: color border 1s;
@@ -743,8 +756,8 @@ footer i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  right: 1rem;
-  bottom: 1.5rem;
+  right: 2rem;
+  bottom: 1.6rem;
   border-radius: .3rem;
 
   background: #200122;
@@ -753,4 +766,9 @@ footer i:hover {
   
   box-shadow:  0 0.1rem 0.6rem #00000009;
   color: #87cefa;
+}
+
+#link-topo:hover {
+  color: #107fc3;
+  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.1); 
 }
