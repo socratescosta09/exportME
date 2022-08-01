@@ -14,6 +14,14 @@
   --font-secundary: "Source Sans Pro", sans-serif;
   --font-action: "Mulish", sans-serif;
 }
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .hamburguer {
   width: 3rem;
@@ -283,7 +291,7 @@ header {
   font-size: 2rem;
 
   border: solid 1px #cacaca;
-  border-radius: 5%;
+  border-radius: 5px;
   transition: color border 1s;
 }
 
@@ -669,4 +677,80 @@ header {
   outline: none;
 
   color: #272727;
+}
+
+footer {
+  width: 100%;
+  height: 7rem;
+
+  background-color: #17181b;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-family: var(--font-secundary);
+  color: #a7a7a7;
+  font-size: 1.2rem;
+}
+
+.social-list a {
+  margin: 0 2rem;
+  color: #a7a7a7;
+  font-size: 1.3rem; 
+}
+
+.social-list ul {
+  display: flex;
+}
+
+footer i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2rem;
+  height: 2rem;
+
+  color: #edeaea;
+  font-size: 2rem;
+
+  border: solid 1px #cacaca;
+  border-radius: 5px;
+  transition: color border 1s;
+  
+  outline: none;
+}
+
+footer i:hover {
+  border: solid 2px #6f0000;
+  color: #6f0000;
+}
+
+#link-topo {
+  width: 3rem;
+  height: 3rem;
+
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 1rem;
+  bottom: 1.5rem;
+  border-radius: .3rem;
+
+  background: #200122;
+  background: -webkit-linear-gradient(to right, #6f0000, #b22222);
+  background: linear-gradient(to right,#6f0000,#b22222);color: #fff;
+  
+  box-shadow:  0 0.1rem 0.6rem #00000009;
+  color: #87cefa;
 }
